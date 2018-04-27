@@ -5,9 +5,70 @@
     <style>
 
        #map {
-        height: 580px;
-        width: 100%;
+        height: 170px;
+        width: 170px;
+        margin: 20px;
        }
+       #map2 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map3 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map4 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map5 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map6 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map7 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map8 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map9 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map10 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map11 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map12 {
+        height: 170px;
+        width: 170px;
+        margin: 20px;
+       }
+       #map13 {
+        height: 90%;
+        width: 470px;
+       }
+
        th, td {
         padding: 15px;
        }
@@ -18,10 +79,24 @@
         bottom:0;
         width:100%;
         background-size: cover;
-        background-color:gray;
+        background-color:white;
         background-image: url("explore.jpg");
         z-index: 100;
       }
+
+      #splashscreen2 {
+       position:absolute;
+       top:0;
+       left:0;
+       bottom:0;
+       height:100%;
+       width:100%;
+       background-size: cover;
+       background-color:lightgray;
+       display: none;
+       z-index: 200;
+     }
+
       .center{
           display: flex;           /* establish flex container */
           flex-direction: column;  /* make main axis vertical */
@@ -57,6 +132,32 @@
     .btn:hover:after {
       opacity: .2;
     }
+
+/* ---- grid ---- */
+
+.grid {
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  margin: 10px;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+
     </style>
     <!---->
   </head>
@@ -85,22 +186,73 @@
       </script>
 
 
-    <div style="margin-left:20px; padding-bottom:30px;">
-          <h3>M E D I A S C A P E S </h3>
-        <div>You have discovered <span class='counter'>0</span>/10 artifacts.
+    <div style="margin-left:20px; text-align:center; font-size:30px;">
+          <h1>M E D I A S C A P E S </h1>
 
-        Click to reveal all:
-            <a href="#" class="reveal" style="text-decoration:none; padding-left:5px;" >
-                <img id="eye" src="dontsee.png" width="30px" alt="Visible">
-            </a>
-
-        </div>
     </div>
 
-    <div id="map"></div>
+    <span style="padding-left: 50px; display:block;width:95%;word-wrap:break-word;">additional description
+additional descriptionadditional descriptionadditional descriptionadditional description
+additional descriptionadditional descriptionadditional descriptionadditional description
+additional descriptionadditional descriptionadditional descriptionadditional description
+additional descriptionadditional descriptionadditional descriptionadditional description
+additional descriptionadditional descriptionadditional descriptionadditional descriptionadditional description
+additional descriptionadditional descriptionadditional descriptionadditional description
+</span>
+
+    <script src="/path/to/masonry.pkgd.min.js"></script>
+
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
+      <div class="grid-item"><div id="map"></div></div>
+      <div class="grid-item"><div id="map2"></div></div>
+      <div class="grid-item"><div id="map3"></div></div>
+      <div class="grid-item"><div id="map4"></div></div>
+      <div class="grid-item"><div id="map5"></div></div>
+      <div class="grid-item"><div id="map6"></div></div>
+      <div class="grid-item"><div id="map7"></div></div>
+      <div class="grid-item"><div id="map8"></div></div>
+      <div class="grid-item"><div id="map9"></div></div>
+      <div class="grid-item"><div id="map10"></div></div>
+      <div class="grid-item"><div id="map11"></div></div>
+      <div class="grid-item"><div id="map12"></div></div>
+    </div>
+
+    <div id="splashscreen2" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+
+            <div id="map13" style="float:left; background-color:lightgray;"></div>
+
+
+
+            <div style="float:left;margin-left:25px;">
+
+                <div style="align-items:center; text-align:center;vertical-align: middle;">
+                    <img src="erin.png" alt="Scene" height="180" width="180">
+                    <img src="erin.png" alt="Scene" height="180" width="180">
+                    <img src="erin.png" alt="Scene" height="180" width="180">
+                </div>
+
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Hinkley</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                  <span class="btn-content">BACK</span>
+
+          </a>
+      </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="data.json"></script>
     <script>
-
-
       function initMap() {
         var hinkley = {lat: 34.903742, lng: -117.159531};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -108,6 +260,55 @@
           center: hinkley,
           styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#7c93a3"},{"lightness":"-10"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"color":"#a0a4a5"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"color":"#62838e"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#dde3e3"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"color":"#3f4a51"},{"weight":"0.30"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"poi.attraction","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.government","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"visibility":"on"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#bbcacf"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"lightness":"0"},{"color":"#bbcacf"},{"weight":"0.50"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"color":"#a9b4b8"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"invert_lightness":true},{"saturation":"-7"},{"lightness":"3"},{"gamma":"1.80"},{"weight":"0.01"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#a3c7df"}]}]
         });
+
+          var map2 = new google.maps.Map(document.getElementById('map2'), {
+            zoom: 4,
+            center: {lat: 24.886, lng: -70.268}
+          });
+          var map3 = new google.maps.Map(document.getElementById('map3'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map4 = new google.maps.Map(document.getElementById('map4'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map5 = new google.maps.Map(document.getElementById('map5'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map6 = new google.maps.Map(document.getElementById('map6'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map7 = new google.maps.Map(document.getElementById('map7'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map8 = new google.maps.Map(document.getElementById('map8'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map9 = new google.maps.Map(document.getElementById('map9'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map10 = new google.maps.Map(document.getElementById('map10'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map11 = new google.maps.Map(document.getElementById('map11'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map12 = new google.maps.Map(document.getElementById('map12'), {
+            zoom: 4,
+            center: hinkley,
+          });
+          var map13 = new google.maps.Map(document.getElementById('map13'), {
+            zoom: 3,
+            center: hinkley,
+          });
 
         var contentString = ''+
             '<div id="details">'+
@@ -159,6 +360,30 @@
           }
         });
 
+
+        // Define the LatLng coordinates for the polygon's path.
+         var triangleCoords = [
+           {lat: 25.774, lng: -80.190},
+           {lat: 18.466, lng: -66.118},
+           {lat: 32.321, lng: -64.757},
+           {lat: 25.774, lng: -80.190}
+         ];
+
+         // Construct the polygon.
+         var bermudaTriangle = new google.maps.Polygon({
+           paths: triangleCoords,
+           strokeColor: '#FF0000',
+           strokeOpacity: 0.8,
+           strokeWeight: 2,
+           fillColor: '#FF0000',
+           fillOpacity: 0.35
+         });
+         bermudaTriangle.setMap(map2);
+
+         bermudaTriangle.addListener('click', function() {
+           $('#splashscreen2').fadeIn(500);
+         });
+
         $('.reveal').click(function () {
 
             if ($('#eye').attr('src') == "see.png") {
@@ -172,6 +397,15 @@
         });
       }
     </script>
+
+
+
+    <script>
+    $('.back_link').click(function () {
+        $('#splashscreen2').fadeOut(500);
+    });
+    </script>
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQP74L_u3IgkI27bHk4IvmBLLvqgmIWno&callback=initMap">
     </script>

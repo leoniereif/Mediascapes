@@ -1,4 +1,4 @@
-{
+data = '{
     "data": {
         "markers": [
             {
@@ -6,19 +6,19 @@
                 "coords": [34.903742, -117.159531],
                 "heading": "Hinkley, California - Erin Brockovich",
                 "img": "erin.png",
-                "pin": "Erin Brockovich (USA, 17 March 2000)",
+                "pin": " Universal Pictures, Columbia Pictures, Jersey Films (USA, 17 March 2000)",
                 "link": "https://www.pinterest.com/pin/664492119993542275/",
                 "content": "<b>Based on a true story</b>, an unemployed single mother..."
             },
             {
-                "id": "next",
-                "coords": [34.903742, -117.159531],
-                "heading": "Hinkley, California - Erin Brockovich",
-                "img": "erin.png",
-                "pin": "Erin Brockovich (USA, 17 March 2000)",
-                "link": "https://www.pinterest.com/pin/664492119993542275/",
-                "content": "<b>Based on a true story</b>, an unemployed single mother..."
+                "id": "rotterdam",
+                "coords": [51.905445, 4.466637],
+                "heading": "Rotterdam, Netherlands - Serendipitor",
+                "img": "flowers.png",
+                "pin": "Sentient City Survival Kit by Mark Sheppard (Creative Capital)",
+                "link": "https://www.pinterest.com/pin/664492119993904860/",
+                "content": "<b>Serendipitor</b> includes detours and prompts in the route as you walk along...."
             }
         ]
     }
-}
+}';'
