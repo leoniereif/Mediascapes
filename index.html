@@ -1,78 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
 
-       #map {
+    #map {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map2 {
+    }
+    #map2 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map3 {
+    }
+    #map3 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map4 {
+    }
+    #map4 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map5 {
+    }
+    #map5 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map6 {
+    }
+    #map6 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map7 {
+    }
+    #map7 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map8 {
+    }
+    #map8 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map9 {
+    }
+    #map9 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map10 {
+    }
+    #map10 {
         height: 170px;
         width: 170px;
         margin: 20px;
-       }
-       #map11 {
-        height: 170px;
-        width: 170px;
-        margin: 20px;
-       }
-       #map12 {
-        height: 170px;
-        width: 170px;
-        margin: 20px;
-       }
-       #map13 {
+    }
+    #map11 {
         height: 90%;
         width: 470px;
-       }
+    }
+    #map12 {
+        height: 90%;
+        width: 470px;
+    }
+    #map13 {
+        height: 90%;
+        width: 470px;
+    }
+    #map14 {
+        height: 90%;
+        width: 470px;
+    }
+    #map15 {
+        height: 90%;
+        width: 470px;
+    }
+    #map16 {
+        height: 90%;
+        width: 470px;
+    }
+    #map17 {
+        height: 90%;
+        width: 470px;
+    }
+    #map18 {
+        height: 90%;
+        width: 470px;
+    }
+    #map19 {
+        height: 90%;
+        width: 470px;
+    }
+    #map20 {
+        height: 90%;
+        width: 470px;
+    }
 
-       th, td {
+
+    th, td {
         padding: 15px;
-       }
-       #splashscreen {
+    }
+    #splashscreen {
         position:absolute;
         top:0;
         left:0;
@@ -82,307 +109,866 @@
         background-color:white;
         background-image: url("explore.jpg");
         z-index: 100;
-      }
-
-      #splashscreen2 {
-       position:absolute;
-       top:0;
-       left:0;
-       bottom:0;
-       height:100%;
-       width:100%;
-       background-size: cover;
-       background-color:lightgray;
-       display: none;
-       z-index: 200;
-     }
-
-      .center{
-          display: flex;           /* establish flex container */
-          flex-direction: column;  /* make main axis vertical */
-          justify-content: center; /* center items vertically, in this case */
-          align-items: center;     /* center items horizontally, in this case */
-          color: white;
-          height:450px;
-      }
-    .btn {
-      border-radius: 4px;
-      border: 2px solid white;
-      color: white;
-      display: inline-block;
-      margin: 0 .25em;
-      overflow: hidden;
-      padding: 24px 24px 24px 16px;
-      position: relative;
-      text-decoration: none;
-      line-height: 1;
-  }
-
-  .btn:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 300ms ease;
-  }
-    .btn:hover:after {
-      opacity: .2;
     }
 
-/* ---- grid ---- */
+    #splashscreen1 {
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        height:100%;
+        width:100%;
+        background-size: cover;
+        background-color:lightgray;
+        display: none;
+        z-index: 200;
+    }
 
-.grid {
-  max-width: 1200px;
-}
+    #splashscreen2 {
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        height:100%;
+        width:100%;
+        background-size: cover;
+        background-color:lightgray;
+        display: none;
+        z-index: 200;
+    }
 
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
-/* ---- grid-item ---- */
+        #splashscreen3 {
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            height:100%;
+            width:100%;
+            background-size: cover;
+            background-color:lightgray;
+            display: none;
+            z-index: 200;
+        }
 
-.grid-item {
-  width: 160px;
-  height: 120px;
-  float: left;
-  margin: 10px;
-  padding-top: 50px;
-  padding-right: 10px;
-}
+
+            #splashscreen4 {
+                position:absolute;
+                top:0;
+                left:0;
+                bottom:0;
+                height:100%;
+                width:100%;
+                background-size: cover;
+                background-color:lightgray;
+                display: none;
+                z-index: 200;
+            }
+
+                #splashscreen5 {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    height:100%;
+                    width:100%;
+                    background-size: cover;
+                    background-color:lightgray;
+                    display: none;
+                    z-index: 200;
+                }
+                #splashscreen6 {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    height:100%;
+                    width:100%;
+                    background-size: cover;
+                    background-color:lightgray;
+                    display: none;
+                    z-index: 200;
+                }
+                #splashscreen7 {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    height:100%;
+                    width:100%;
+                    background-size: cover;
+                    background-color:lightgray;
+                    display: none;
+                    z-index: 200;
+                }
+                #splashscreen8 {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    height:100%;
+                    width:100%;
+                    background-size: cover;
+                    background-color:lightgray;
+                    display: none;
+                    z-index: 200;
+                }
+                #splashscreen9 {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    height:100%;
+                    width:100%;
+                    background-size: cover;
+                    background-color:lightgray;
+                    display: none;
+                    z-index: 200;
+                }
+                #splashscreen10 {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    height:100%;
+                    width:100%;
+                    background-size: cover;
+                    background-color:lightgray;
+                    display: none;
+                    z-index: 200;
+                }
+
+    .center{
+        display: flex;           /* establish flex container */
+        flex-direction: column;  /* make main axis vertical */
+        justify-content: center; /* center items vertically, in this case */
+        align-items: center;     /* center items horizontally, in this case */
+        color: white;
+        height:450px;
+    }
+    .btn {
+        border-radius: 4px;
+        border: 2px solid white;
+        color: white;
+        display: inline-block;
+        margin: 0 .25em;
+        overflow: hidden;
+        padding: 24px 24px 24px 16px;
+        position: relative;
+        text-decoration: none;
+        line-height: 1;
+    }
+
+    .btn:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0;
+        transition: opacity 300ms ease;
+    }
+    .btn:hover:after {
+        opacity: .2;
+    }
+
+    /* ---- grid ---- */
+
+    .grid {
+        max-width: 1000px;
+        margin:0 auto;
+    }
+
+    /* clearfix */
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* ---- grid-item ---- */
+
+    .grid-item {
+        width: 160px;
+        height: 120px;
+        float: left;
+        margin: 10px;
+        padding-top: 50px;
+        padding-right: 10px;
+    }
 
 
     </style>
     <!---->
-  </head>
-  <body>
+</head>
+<body>
 
-      <div id="splashscreen">
-          <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
-          <div class="center">
+    <div id="splashscreen">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div class="center">
 
-              <p style="margin:70px; text-align:center; vertical-align: middle;">
-                  <span style="font-size:24px;  ">W e l c o m e !</span><br><br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
-                  Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vulputate mollis enim sit amet, venenatis venenatis nisl. Aenean vehicula lectus a sapien dignissim, id suscipit nunc tempor. Etiam pharetra libero sit amet sem maximus, ac tincidunt libero gravida. Cras tristique mauris mi, vel fermentum justo imperdiet nec. In vitae dapibus nunc.
-                </p>
-              <a href="#" class="enter_link btn" >
-                    <span class="btn-content">START EXPLORING</span>
+            <p style="margin:70px; text-align:center; vertical-align: middle;">
+                <span style="font-size:24px;  ">W e l c o m e !</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vulputate mollis enim sit amet, venenatis venenatis nisl. Aenean vehicula lectus a sapien dignissim, id suscipit nunc tempor. Etiam pharetra libero sit amet sem maximus, ac tincidunt libero gravida. Cras tristique mauris mi, vel fermentum justo imperdiet nec. In vitae dapibus nunc.
+            </p>
+            <a href="#" class="enter_link btn" >
+                <span class="btn-content">START EXPLORING</span>
             </a>
 
-          </div>
-      </div>
+        </div>
+    </div>
 
-      <script>
-      $('.enter_link').click(function () {
-          $('#splashscreen').fadeOut(500);
-      });
-      </script>
+    <script>
+    $('.enter_link').click(function () {
+        $('#splashscreen').fadeOut(500);
+    });
+    </script>
 
 
     <div style="margin-left:20px; text-align:center; font-size:30px;">
-          <h1>M E D I A S C A P E S </h1>
+        <h1>M E D I A S C A P E S </h1>
 
     </div>
 
     <span style="padding-left: 50px; display:block;width:95%;word-wrap:break-word;">additional description
-additional descriptionadditional descriptionadditional descriptionadditional description
-additional descriptionadditional descriptionadditional descriptionadditional description
-additional descriptionadditional descriptionadditional descriptionadditional description
-additional descriptionadditional descriptionadditional descriptionadditional description
-additional descriptionadditional descriptionadditional descriptionadditional descriptionadditional description
-additional descriptionadditional descriptionadditional descriptionadditional description
-</span>
+        additional descriptionadditional descriptionadditional descriptionadditional description
+        additional descriptionadditional descriptionadditional descriptionadditional description
+        additional descriptionadditional descriptionadditional descriptionadditional description
+        additional descriptionadditional descriptionadditional descriptionadditional description
+        additional descriptionadditional descriptionadditional descriptionadditional descriptionadditional description
+        additional descriptionadditional descriptionadditional descriptionadditional description
+    </span>
 
     <script src="/path/to/masonry.pkgd.min.js"></script>
 
     <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
-      <div class="grid-item"><div id="map"></div></div>
-      <div class="grid-item"><div id="map2"></div></div>
-      <div class="grid-item"><div id="map3"></div></div>
-      <div class="grid-item"><div id="map4"></div></div>
-      <div class="grid-item"><div id="map5"></div></div>
-      <div class="grid-item"><div id="map6"></div></div>
-      <div class="grid-item"><div id="map7"></div></div>
-      <div class="grid-item"><div id="map8"></div></div>
-      <div class="grid-item"><div id="map9"></div></div>
-      <div class="grid-item"><div id="map10"></div></div>
-      <div class="grid-item"><div id="map11"></div></div>
-      <div class="grid-item"><div id="map12"></div></div>
+        <div class="grid-item"><div id="map"></div></div>
+        <div class="grid-item"><div id="map2"></div></div>
+
+        <div class="grid-item"><div id="map4"></div></div>
+        <div class="grid-item"><div id="map10"></div></div>
+        <div class="grid-item"><div id="map5"></div></div>
+
+        <div class="grid-item"><div id="map9"></div></div>
+        <div class="grid-item"><div id="map8"></div></div>
+        <div class="grid-item"><div id="map6"></div></div>
+
+        <div class="grid-item"><div id="map7"></div></div>
+        <div class="grid-item"><div id="map3"></div></div>
+
+
+    </div>
+
+    <div id="splashscreen1" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map11" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Huckleberry</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
     </div>
 
     <div id="splashscreen2" style="background-color:lightgray;">
         <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
-
-            <div id="map13" style="float:left; background-color:lightgray;"></div>
-
-
-
-            <div style="float:left;margin-left:25px;">
-
-                <div style="align-items:center; text-align:center;vertical-align: middle;">
-                    <img src="erin.png" alt="Scene" height="180" width="180">
-                    <img src="erin.png" alt="Scene" height="180" width="180">
-                    <img src="erin.png" alt="Scene" height="180" width="180">
-                </div>
-
+        <div id="map12" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
             <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
                 <span style="font-size:24px;  ">Hinkley</span><br><br>
                 <span style="display:block;width:650px;word-wrap:break-word;">
                     This is about local and global... more and more
-                and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
-                Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
                 </span>
             </p>
             <a href="#" class="back_link btn"  >
-                  <span class="btn-content">BACK</span>
+                <span class="btn-content">BACK</span>
 
-          </a>
-      </div>
+            </a>
+        </div>
+    </div>
 
+    <div id="splashscreen3" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map13" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">LA</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
 
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen4" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map14" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Rotterdam</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen5" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map15" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Madrid, Dublin</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen6" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map16" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Dublin, Copehagen and Detroit</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen7" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map17" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Satellite</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen8" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map18" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Beltline</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen9" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map19" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Turkey Houses</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
+    </div>
+    <div id="splashscreen10" style="background-color:lightgray;">
+        <h3 style="margin-left:20px; color:white;">M E D I A S C A P E S </h3>
+        <div id="map20" style="float:left; background-color:lightgray;"></div>
+        <div style="float:left;margin-left:25px;">
+            <div style="align-items:center; text-align:center;vertical-align: middle;">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+                <img src="erin.png" alt="Scene" height="180" width="180">
+            </div>
+            <p style=" text-align:center; vertical-align: middle; word-wrap: break-word;  ">
+                <span style="font-size:24px;  ">Miami Design</span><br><br>
+                <span style="display:block;width:650px;word-wrap:break-word;">
+                    This is about local and global... more and more
+                    and muc more Lorem ipsum dolor sit amet,pharetra sagittis purus,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra sagittis purus, id ullamcorper odio tristique hendrerit. Donec est nibh, mattis eget felis fermentum, egestas pulvinar mi. Nam varius, libero at facilisis malesuada, ligula ante ultricies mauris, vitae vulputate mauris nisl et turpis. Phasellus eget dolor elementum odio maximus faucibus sit amet ut diam. Etiam massa eros, aliquet in tempor eu, porta quis metus. Nam quam orci, dapibus ac ullamcorper sit amet, dictum eu leo. Donec eget enim mattis, ornare risus non, fermentum lectus.
+                    Proin tincidunt a quam ut luctus. Aenean felis magna, sodales nec faucibus id, facilisis in risus. Phasellus orci lorem, efficitur quis turpis et, ullamcorper ornare metus. Donec leo justo, ullamcorper id laoreet vel, tincidunt quis metus. In hac habitasse platea dictumst. Aenean justo velit, feugiat vel lectus vitae, convallis bibendum purus. In massa justo, blandit vel interdum sagittis, semper vel purus. Duis et diam risus. Donec vel lobortis neque. Morbi justo enim, vul
+                </span>
+            </p>
+            <a href="#" class="back_link btn"  >
+                <span class="btn-content">BACK</span>
+
+            </a>
+        </div>
     </div>
 
 
     <script type="text/javascript" src="data.json"></script>
     <script>
-      function initMap() {
+    function initMap() {
         var hinkley = {lat: 34.903742, lng: -117.159531};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: hinkley,
-          styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#7c93a3"},{"lightness":"-10"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"color":"#a0a4a5"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"color":"#62838e"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#dde3e3"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"color":"#3f4a51"},{"weight":"0.30"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"poi.attraction","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.government","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"},{"visibility":"on"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#bbcacf"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"lightness":"0"},{"color":"#bbcacf"},{"weight":"0.50"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.stroke","stylers":[{"color":"#a9b4b8"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"invert_lightness":true},{"saturation":"-7"},{"lightness":"3"},{"gamma":"1.80"},{"weight":"0.01"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#a3c7df"}]}]
+            zoom: 4,
+            center: {lat: 37.052478, lng: -88.695930},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
         });
 
-          var map2 = new google.maps.Map(document.getElementById('map2'), {
-            zoom: 4,
-            center: {lat: 24.886, lng: -70.268}
-          });
-          var map3 = new google.maps.Map(document.getElementById('map3'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map4 = new google.maps.Map(document.getElementById('map4'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map5 = new google.maps.Map(document.getElementById('map5'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map6 = new google.maps.Map(document.getElementById('map6'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map7 = new google.maps.Map(document.getElementById('map7'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map8 = new google.maps.Map(document.getElementById('map8'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map9 = new google.maps.Map(document.getElementById('map9'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map10 = new google.maps.Map(document.getElementById('map10'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map11 = new google.maps.Map(document.getElementById('map11'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map12 = new google.maps.Map(document.getElementById('map12'), {
-            zoom: 4,
-            center: hinkley,
-          });
-          var map13 = new google.maps.Map(document.getElementById('map13'), {
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+            zoom: 9,
+            center: {lat: 34.878618, lng: -117.134679},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //hinkley
+        });
+        var map3 = new google.maps.Map(document.getElementById('map3'), {
+            zoom: 9,
+            center: {lat: 34.061126, lng: -118.300486},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //LA
+        });
+        var map4 = new google.maps.Map(document.getElementById('map4'), {
+            zoom: 9,
+            center: {lat: 51.881712, lng: 4.562496},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //Rott
+        });
+        var map5 = new google.maps.Map(document.getElementById('map5'), {
             zoom: 3,
-            center: hinkley,
-          });
+            center: {lat: 46.344262, lng:-3.250677},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //madrid and dublin
+        });
+        var map6 = new google.maps.Map(document.getElementById('map6'), {
+            zoom: 3,
+            center: {lat:54.671550, lng:5.570594},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //copenhagen and co
+        });
+        var map7 = new google.maps.Map(document.getElementById('map7'), {
+            zoom: 9,
+            center: {lat:32.767746, lng: 44.285759},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //satellite
+        });
+        var map8 = new google.maps.Map(document.getElementById('map8'), {
+            zoom: 10,
+            center: {lat:33.769560, lng: -84.394985},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //beltline
+        });
+        var map9 = new google.maps.Map(document.getElementById('map9'), {
+            zoom: 11,
+            center: {lat:41.322577, lng: 28.732387},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //turkey houses
+        });
+        var map10 = new google.maps.Map(document.getElementById('map10'), {
+            zoom: 14,
+            center: {lat:25.812010, lng: -80.190814},
+            styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+         //miami
 
-        var contentString = ''+
-            '<div id="details">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Hinkley, California - Erin Brockovich</h1>'+
-            '<div id="bodyContent"><table style="width:100%"><tr><td><img src="erin.png" alt="Scene" height="100" width="100"></td>'+
-            '<td>'+
-            '<p><b>Based on a true story</b>, an unemployed single mother... </p>' +
-            '<p>Pinterest Pin: Erin Brockovich (USA, 17 March 2000), <a href="https://www.pinterest.com/pin/664492119993542275/">'+
-            'https://www.pinterest.com/pin/664492119993542275/</a> '+
-            '</p></td></tr></table>'+
-            '</div>';
-
-        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-        var icons = {
-          idea: {
-            icon: iconBase + 'leaf.png'
-          }
-        };
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString,
-          maxWidth: 500
+        });
+        var map11 = new google.maps.Map(document.getElementById('map11'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679}
+            //huckle
+        });
+        var map12 = new google.maps.Map(document.getElementById('map12'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //hinkley
+        });
+        var map13 = new google.maps.Map(document.getElementById('map13'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map14 = new google.maps.Map(document.getElementById('map14'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map15 = new google.maps.Map(document.getElementById('map15'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map16 = new google.maps.Map(document.getElementById('map16'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map17 = new google.maps.Map(document.getElementById('map17'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map18 = new google.maps.Map(document.getElementById('map18'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map19 = new google.maps.Map(document.getElementById('map19'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
+        });
+        var map20 = new google.maps.Map(document.getElementById('map20'), {
+            zoom: 5,
+            center: {lat: 34.878618, lng: -117.134679} //LA
         });
 
-        var marker = new google.maps.Marker({
-          position: hinkley,
-          icon: 'leaf.png',
-          map: null,
-          id: 1
+
+        var riverCoords = [
+            {lat: 39.782240, lng: -91.639596},
+            {lat: 40.080991, lng: -90.384209},
+            {lat: 37.052478, lng: -88.695930},
+            {lat: 33.013271, lng: -90.773812},
+            {lat: 33.122104, lng: -91.791109},
+            {lat: 37.000638, lng: -89.756516}
+        ];
+
+        var hinkleyCoords = [
+            {lat: 34.990505, lng: -117.309853},
+            {lat: 34.965142, lng: -117.079102},
+            {lat: 34.878618, lng: -117.134679},
+            {lat: 34.905162, lng: -117.311260}
+        ];
+
+        var laCoords = [
+            {lat: 34.240690, lng: -118.234280},
+            {lat: 34.061126, lng: -118.470486},
+            {lat: 33.915377, lng: -118.248013},
+            {lat: 34.059988, lng: -118.029660}
+        ];
+
+        var rottCoords = [
+            {lat: 51.963442, lng: 4.380535},
+            {lat: 51.993049, lng: 4.594082},
+            {lat: 51.881712, lng: 4.562496},
+            {lat: 51.871539, lng: 4.408001}
+        ];
+
+        var green = "#9FD96B";//"#097054";
+        var yellow = "#FFDE00";
+        var blue = "#059B9A";//"#6599FF";
+        var orange = "#FF9900";
+
+        var madridCircle = new google.maps.Circle({
+            strokeColor: orange,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: orange,
+            fillOpacity: 0.35,
+            map: map3,
+            center: {lat: 40.416750, lng:-3.704073},
+            radius: 40000
         });
 
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
+        var dublinCircle = new google.maps.Circle({
+            strokeColor: orange,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: orange,
+            fillOpacity: 0.35,
+            map: map3,
+            center: {lat: 53.344262, lng:-6.250677},
+            radius: 40000
         });
 
-        let clicked = new Set();
-        marker.addListener('click', function() {
-          clicked.add(marker.get('id'));
-          document.querySelector('.counter').innerHTML = clicked.size;
+        var dublinCircle2 = new google.maps.Circle({
+            strokeColor: yellow,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: yellow,
+            fillOpacity: 0.35,
+            map: map3,
+            center: {lat: 53.344262, lng:-6.250677},
+            radius: 40000
         });
 
-        google.maps.event.addListener(map, 'zoom_changed', function(e) {
-          if(map.zoom >= 6) {
-            marker.setMap(map);
-          }
-          else {
-            marker.setMap(null);
-          }
+        madridCircle.setMap(map5);
+        dublinCircle.setMap(map5);
+        madridCircle.addListener('click', function() {
+            $('#splashscreen5').fadeIn(500);
+        });
+        dublinCircle.addListener('click', function() {
+            $('#splashscreen5').fadeIn(500);
+        });
+
+        var copenhagenCircle = new google.maps.Circle({
+            strokeColor: yellow,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: yellow,
+            fillOpacity: 0.35,
+            map: map3,
+            center: {lat:55.671550, lng:12.570594},
+            radius: 40000
+        });
+
+        var detroitCircle = new google.maps.Circle({
+            strokeColor: yellow,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: yellow,
+            fillOpacity: 0.35,
+            map: map3,
+            center: {lat:42.353830,lng: -83.061894},
+            radius: 40000
+        });
+
+        copenhagenCircle.setMap(map6);
+        detroitCircle.setMap(map6);
+        dublinCircle2.setMap(map6);
+        dublinCircle2.addListener('click', function() {
+            $('#splashscreen6').fadeIn(500);
+        });
+        copenhagenCircle.addListener('click', function() {
+            $('#splashscreen6').fadeIn(500);
+        });
+
+        detroitCircle.addListener('click', function() {
+            $('#splashscreen6').fadeIn(500);
         });
 
 
-        // Define the LatLng coordinates for the polygon's path.
-         var triangleCoords = [
-           {lat: 25.774, lng: -80.190},
-           {lat: 18.466, lng: -66.118},
-           {lat: 32.321, lng: -64.757},
-           {lat: 25.774, lng: -80.190}
-         ];
 
-         // Construct the polygon.
-         var bermudaTriangle = new google.maps.Polygon({
-           paths: triangleCoords,
-           strokeColor: '#FF0000',
-           strokeOpacity: 0.8,
-           strokeWeight: 2,
-           fillColor: '#FF0000',
-           fillOpacity: 0.35
-         });
-         bermudaTriangle.setMap(map2);
+        var satelliteCircle = new google.maps.Circle({
+            strokeColor: orange,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: orange,
+            fillOpacity: 0.35,
+            map: map3,
+            center: {lat:32.767746, lng: 44.285759},
+            radius: 5000
+        });
 
-         bermudaTriangle.addListener('click', function() {
-           $('#splashscreen2').fadeIn(500);
-         });
+        satelliteCircle.setMap(map7);
+        satelliteCircle.addListener('click', function() {
+            $('#splashscreen7').fadeIn(500);
+        });
+
+        var beltineCoords= [
+            {lat:33.826866, lng: -84.367691},
+            {lat:33.760387, lng: -84.352241},
+            {lat:33.722560, lng: -84.394985},
+            {lat:33.739977, lng: -84.434810},
+            {lat:33.789353, lng: -84.429145}
+        ];
+
+        var beltlineShape = new google.maps.Polygon({
+            paths: beltineCoords,
+            strokeColor: green,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: green,
+            fillOpacity: 0.35
+        });
+        beltlineShape.setMap(map8);
+
+        beltlineShape.addListener('click', function() {
+            $('#splashscreen8').fadeIn(500);
+        });
+
+        var turkeyCoords= [
+            {lat:41.329099, lng: 28.713489},
+            {lat:41.322577, lng: 28.732387},
+            {lat:41.311541, lng: 28.718841}
+        ];
+
+        var turkeyTriangle = new google.maps.Polygon({
+            paths: turkeyCoords,
+            strokeColor: blue,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: blue,
+            fillOpacity: 0.35
+        });
+        turkeyTriangle.setMap(map9);
+
+        turkeyTriangle.addListener('click', function() {
+            $('#splashscreen9').fadeIn(500);
+        });
+
+
+        var miamiddCoords= [
+            {lat:25.814771, lng: -80.195461},
+            {lat:25.814810, lng: -80.190204},
+            {lat:25.812010, lng: -80.190814},
+            {lat:25.811817, lng: -80.195760}
+        ];
+
+
+
+        var miamiShape = new google.maps.Polygon({
+            paths: miamiddCoords,
+            strokeColor: green,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: green,
+            fillOpacity: 0.35
+        });
+        miamiShape.setMap(map10);
+
+        miamiShape.addListener('click', function() {
+            $('#splashscreen10').fadeIn(500);
+        });
+
+        var rottShape = new google.maps.Polygon({
+            paths: rottCoords,
+            strokeColor: orange,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: orange,
+            fillOpacity: 0.35
+        });
+        rottShape.setMap(map4);
+
+        rottShape.addListener('click', function() {
+            $('#splashscreen4').fadeIn(500);
+        });
+
+        var laShape = new google.maps.Polygon({
+            paths: laCoords,
+            strokeColor: yellow,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: yellow,
+            fillOpacity: 0.35
+        });
+        laShape.setMap(map3);
+
+        laShape.addListener('click', function() {
+            $('#splashscreen3').fadeIn(500);
+        });
+
+
+
+        var hinkleyShape = new google.maps.Polygon({
+            paths: hinkleyCoords,
+            strokeColor: yellow,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: yellow,
+            fillOpacity: 0.35
+        });
+        hinkleyShape.setMap(map2);
+
+        hinkleyShape.addListener('click', function() {
+            $('#splashscreen2').fadeIn(500);
+        });
+
+
+        var riverPoly = new google.maps.Polygon({
+            paths: riverCoords,
+            strokeColor: blue,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: blue,
+            fillOpacity: 0.35
+        });
+        riverPoly.setMap(map);
+        riverPoly.addListener('click', function() {
+            $('#splashscreen1').fadeIn(500);
+        });
+
 
         $('.reveal').click(function () {
 
@@ -395,19 +981,28 @@ additional descriptionadditional descriptionadditional descriptionadditional des
             }
 
         });
-      }
+    }
     </script>
 
 
 
     <script>
     $('.back_link').click(function () {
+        $('#splashscreen1').fadeOut(500);
         $('#splashscreen2').fadeOut(500);
+        $('#splashscreen3').fadeOut(500);
+        $('#splashscreen4').fadeOut(500);
+        $('#splashscreen5').fadeOut(500);
+        $('#splashscreen6').fadeOut(500);
+        $('#splashscreen7').fadeOut(500);
+        $('#splashscreen8').fadeOut(500);
+        $('#splashscreen9').fadeOut(500);
+        $('#splashscreen10').fadeOut(500);
     });
     </script>
 
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQP74L_u3IgkI27bHk4IvmBLLvqgmIWno&callback=initMap">
     </script>
-  </body>
+</body>
 </html>
